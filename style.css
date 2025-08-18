@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*::selection {
+    background-color: black;
+    color: white;
+}
+hr {
+    background-color: black;
+    border: solid;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.897);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Navigation */
+.navigation {
+    height: 45px;
+    position: fixed;
+    font-size: 17px;
+    display: flex;
+}
+.allNav {
+    display: flex;
+    width: 60%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+}
+.allNav div {
+    padding: 13px 20px;
+    border-radius: 20px;
+    transition: .3s;
+    text-align: center;
+}
+.allNav div:hover {
+    cursor: pointer;
+    transition: .3s;
+    transform: translate(0%, -5%);
+    background-color: rgba(158, 158, 158, 0.13);
+}
+.threedote {
+    margin-left: 100%;
+    transform: translate(-100%, 10px);
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* First Section */
+.AllTitle {
+    /*
+    background-color: rgba(165, 42, 42, 0.623); */
+    height: 100vh;
+    padding-top: 50vh;
+    
+}
+.RuTitleText {
+    /*border: 1px solid;
+    background-color: rgba(128, 255, 0, 0.336);
+*/    transform: translateY(-50%);
+}
+.RuInEnglish {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+.choier {
+    transform: rotateZ(90deg);
+}
+.RuInAmharic {
+    font-family: Ethiopic zelan;
+    font-weight: lighter;
+    font-size: 100px;
+    text-align: center;
+}
+.hibret {
+    font-family: Ethiopic zelan;
+}
+
+/*Second Section*/
+.AboutSection {
+    /*background-color: rgba(255, 255, 0, 0.644);*/
+    height: 100vh;
+}
+
+
+/*Third Section__Copy from forth section*/
+.MembersSection {
+    height: 100vh;
+    /*background-color: violet;*/
+    padding-top: 80px;
+}
+.TitleSectionThree {
+    text-align: center;
+    font-size: 25px;
+}
+.MembersEnglish {
+
+}
+.MembersAmharic {
+    font-family: Ethiopic zelan;
+}
+.listbox {
+    border: 1px solid;
+    width: 80%;
+    height: 67vh;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 7vh;
+}
+
+
+/*Fourthe Section*/
+.SongsSection {
+    padding-top: 80px;
+}
+.TitleSectionFour {
+    text-align: center;
+    font-size: 25px;
+}
+.SongsEnglish {
+
+}
+.SongsAmharic {
+    font-family: Ethiopic zelan;
+}
+.elements {
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
+}
+#songsList {
+    font-family: Ethiopic zelan;
+    font-size: 20px;
+    display: flex;
+    width: 310px;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 15px;
+}
+#songsList:hover {
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+#songsList:active {
+    transition: .1s;
+    box-shadow: 1px 1px 3px rgba(49, 49, 49, 0.432);
+}
+.number {
+    border-right: solid 1px;
+    text-align: center;
+    width: 40px;
+    padding: 10px 0;
+    margin-right: 10px;
+    transition: .3s;
+}
+#songsList:hover .number {
+    transition: .3s;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.363);
+}
+.name {
+    transform: translateY(11px);
+    font-family: Ethiopic zelan;
+    transition: .3s;
+}
+#songsList:hover .name {
+    transition: .3s;
+    transform: translate(5px, 11px);
+}
+#specialCase {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media all and (max-width: 1220px) {
+    .RuInEnglish {
+        font-size: 8vw;
+    }
+    .RuInAmharic {
+        font-size: 8vw;
+    }
+    .elements {
+        grid-template-columns: 1fr 1fr;
+    }
+    #songsList {
+        width: 95%;
+    }
+}
+@media all and (max-width: 800px) {
+    .RuInEnglish {
+        font-size: 10vw;
+    }
+    .RuInAmharic {
+        font-size: 10vw;
+    }
+    .elements {
+        grid-template-columns: 1fr;
+    }
+    #songsList {
+        width: 80%;
+    }
+    #songsList:active .number {
+        transition: .3s;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 3px 0 3px rgba(0, 0, 0, 0.363);
+    }
+    #songsList:hover .number {
+        transition: .3s;
+        font-weight: normal;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 3px 0 3px rgba(0, 0, 0, 0);
+    }
+    #songsList:hover .name {
+        transition: .3s;
+        transform: translate(0px, 11px);
+    }
+    #songsList:active .name {
+        transition: .2s;
+        transform: translate(5px, 11px);
+    }
+}
+@media all and (max-width: 600px) {
+    .navigation {
+        width: fit-content;
+    }
+}
+@media all and (max-width: 400px) {
+    .navigation {
+        font-size: 10px;
+    }
+    .navigation:hover .allNav {
+        display: flex;
+    }
+    .allNav {
+        display: none;
+        transform: translate(-73vw, 0);
+    }
+    .allNav div {
+        padding: 13px 10px;
+    }
+    .threedote {
+        display: flex;
+        margin-left: 90vw;
+    }
+}

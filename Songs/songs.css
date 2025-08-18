@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ethiopic zelan;
+}
+*::selection {
+    background-color: black;
+    color: white;
+}
+body {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* LEFT */
+.left {
+    border-right: 1px solid rgba(128, 128, 128, 0.562);
+    box-shadow: 5px 0 5px rgba(128, 128, 128, 0.582);
+    background-color: rgba(128, 128, 128, 0.041);
+}
+.mostUpper {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mostUpper div .leftLeftArrow {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+.leftLeftArrow:hover {
+    transition: .5s;
+    transform: translateX(-5px);
+}
+.leftHomeIcon {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 25px;
+    cursor: pointer;
+    transition: .2s;
+}
+.leftHomeIcon:hover {
+    width: 27px;
+    transition: .2s;
+    transform: translateX(-1px);
+}
+.material-symbols-outlined {
+    background-color: blue;
+    height: 40px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+.LeftSongs {
+    margin-top: 10px;
+}
+.leftTitle {
+    margin-bottom: 25px;
+    height: 40px;
+}
+.leftTitleInParagraph {
+    width: fit-content;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold;
+    transform: translateY(7.5px);
+}
+.listedSongsAllPart {
+    width: 100%;
+}
+.listed {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.342);
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .05s;
+}
+.listed:hover {
+    transition: .05s;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.623);
+    font-size: 16px;
+}
+#selected {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.623);
+    padding-left: 70px;
+}
+#selected:hover {
+    font-size: 15px;
+}
+
+
+
+/* RIGHT */
+.right {
+    margin-top: 30px;
+}
+h1 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    text-decoration: underline;
+    font-size: 4vw;
+}
+.allSong {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.allSong div {
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+}
+.mainPart {
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#mainPartTwo {
+    margin-top: 30px;
+    color: rgb(126, 40, 0);
+}
+.numberSongs {
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.nu {
+    transform: translateX(-30px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+/* Left and Ritearrow */
+.leftBottomArrow {
+    border-radius: 50%;
+    position: fixed;
+    margin-left: 70px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    transition: .2s;
+    cursor: pointer;
+}
+.leftBottomArrow img {
+    width: 30px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+.leftBottomArrow:hover {
+    transition: .2s;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.651);
+}
+.rightBottomArrow {
+    border-radius: 50%;
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+.rightBottomArrow img {
+    width: 30px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rightBottomArrow:hover {
+    transition: .2s;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.651);
+}
