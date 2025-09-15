@@ -186,7 +186,7 @@ h1 {
 }
 .leftBottomArrow:hover {
     transition: .2s;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.651);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.13);
 }
 .rightBottomArrow {
     border-radius: 50%;
@@ -206,6 +206,13 @@ h1 {
 }
 .rightBottomArrow:hover {
     transition: .2s;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.651);
-
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.13);
+}
+@media all and (max-width: 400px) {
+    .leftBottomArrow {
+        display: none;
+    }
+    .rightBottomArrow {
+        display: none;
+    }
 }
