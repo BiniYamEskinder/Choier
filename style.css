@@ -54,6 +54,45 @@ a {
     cursor: pointer;
 }
 
+/* darkBright */
+.dark {
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+    border: solid 1px rgba(0, 0, 0, 0.377);
+    border-right: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 65px;
+    height: 40px;
+    top: 45px;
+    right: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+.darkIcon {
+    width: 25px;
+    margin-top: 6px;
+    margin-left: 12px;
+}
+.darkModeNote {
+    display: inline;
+    position: absolute;
+    font-size: 15px;
+    transform: translate(3px, 11px);
+    opacity: 0;
+    transition: 0.2s;
+}
+.dark:hover {
+    transition: .5s;
+    width: 120px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 10px rgba(77, 77, 77, 0.356);
+}
+.dark:hover .darkModeNote {
+    transition: 1s;
+    opacity: 1;
+}
+
 
 
 /* First Section */
@@ -90,8 +129,88 @@ a {
 /*Second Section*/
 .AboutSection {
     /*background-color: rgba(255, 255, 0, 0.644);*/
-    height: 100vh;
+    padding-top: 70px;
 }
+.aboutMainBox {
+    width: 80vw;
+    height: 550px;
+    margin-top: 60px;
+    margin-left: 50%;
+    margin-bottom: 80px;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.aboutContent {
+    width: 240px;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(128, 128, 128, 0.267);
+    text-align: center;
+    transition: .5s;
+}
+.yearTitle {
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: Niagara Engraved;
+}
+.timeSpecification {
+    font-size: 16px;
+}
+#nowId {
+    font-family: Ethiopic zelan;
+    font-weight: normal;
+}
+.listTimeList {
+    margin-top: 20px;
+    list-style: square;
+    width: 160px;
+    text-align: start;
+    margin-left: 50%;
+}
+.listTimeList li {
+    transform: translateX(-45%);
+}
+.aboutContent:hover {
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.0);
+    transform: translateY(-1.5%);
+    box-shadow: 0px 5px 6px rgba(97, 97, 97, 0.459);
+}
+@media all and (max-width: 1250px) {
+    .aboutMainBox {
+        height: 680px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutContent {
+        width: 35vw;
+        height: 95%;
+    }
+    .yearTitle {
+        margin-top: 50px;
+    }
+    .listTimeList {
+        margin-top: 0;
+    }
+}
+@media all and (max-width: 600px) {
+    .aboutMainBox {
+        height: 1150px;
+        grid-template-columns: 1fr;
+        margin-bottom: 120px;
+    }
+    .aboutContent {
+        width: 75vw;
+        padding-bottom: 40px;
+    }
+    .yearTitle {
+        margin-top: 30px;
+    }
+}
+
+
 
 
 /*Third Section__Copy from forth section*/
@@ -103,9 +222,6 @@ a {
 .TitleSectionThree {
     text-align: center;
     font-size: 25px;
-}
-.MembersEnglish {
-
 }
 .MembersAmharic {
     font-family: Ethiopic zelan;
@@ -128,9 +244,6 @@ a {
 .TitleSectionFour {
     text-align: center;
     font-size: 25px;
-}
-.SongsEnglish {
-
 }
 .SongsAmharic {
     font-family: Ethiopic zelan;
