@@ -23,6 +23,11 @@ a {
     border-right: 1px solid rgba(128, 128, 128, 0.562);
     box-shadow: 5px 0 5px rgba(128, 128, 128, 0.582);
     background-color: rgba(128, 128, 128, 0.041);
+    height: 100vh;
+    overflow-y: auto;
+}
+.left::-webkit-scrollbar {
+    display: none;
 }
 @media all and (max-width: 700px) {
 .left {
@@ -121,7 +126,12 @@ a {
 
 /* RIGHT */
 .right {
-    margin-top: 30px;
+    padding-top: 30px;
+    height: 100vh;
+    overflow-y: auto;
+}
+.right::-webkit-scrollbar {
+    display: none;
 }
 @media all and (max-width: 700px) {
     .right {
